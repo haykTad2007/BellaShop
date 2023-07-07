@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women</title>
+    <link rel="stylesheet" href="women.css">
+    <script defer src="card.js"></script>
+    <script defer src="women.js"></script>
+</head>
+<body> 
+    <div id="displayOff"></div> 
+    <header>
+        <div class="hedbox">
+
+            <div class="search">
+                <input type="text" placeholder="What are you looking ?" style="height: 4vh; width: 100%;font-size: 100%;" id="search">
+                <button id="press" ><img  src="https://t4.ftcdn.net/jpg/03/05/43/17/360_F_305431718_eh07vqK6LRIjxixuTxATG5PFCQmGwNwQ.jpg" alt="" width="100%" height="20vh"></button>
+            </div>
+    
+            <!-- <img src="https://jthemes.net/themes/html/bellashop/assets/img/logo-bella-shop.png" alt=""> -->
+            <h1 style="color: aquamarine;"> <i>HAYKOSHOP</i> </h1>
+
+        <div style="display: flex;">
+            <button class="bheart" ><a href="" class="heart" >&#10084;</a></button>
+            <button class="bheart" id="bheart1">
+                <svg id="strelka" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                <path class="heart "  fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+              </svg>
+            </button>
+            <ul style="display: flex;" >
+                <li  style="width: 100%;padding: 13%;border: 1px solid black; " class="bheart heart" id="cardbox">  CARD
+                    
+                    <div class="cardUl" id="card"  style="color: black;">
+                        <p id="noProduct">YOU HAVE NO PRODUCTS</p>
+                            
+                        </div>
+                        <!-- <p id="fullPrice"></p> -->
+                
+
+                </li>
+                <button class="bheart heart" id="open" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg>
+                </button>
+                <button class="bheart heart" id="close" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                </button>
+            </ul>
+            
+
+        </div>
+
+        </div>
+
+
+        <nav class="nav">
+                <div style="display: flex;
+                justify-content: center;">
+
+                
+                <li class="bheart " id="bheart2"  >
+                    <a href="../../index.html" 
+                    id="bheart2li" class="heart">Homepage</a>
+                    <ul class="hideul1"     >
+                        <a href=""><li class="hidden">Homepage1</li></a>
+                        <a href=""><li class="hidden">Homepage2</li></a>
+                        <a href=""><li class="hidden">Homepage3</li></a>
+                        <a href=""><li class="hidden">Homepage4</li></a>
+                        <a href=""><li class="hidden">Homepage5</li></a>
+                        <a href=""><li class="hidden">Homepage6</li></a>
+                        <a href=""><li class="hidden">Homepage7</li></a>
+                        <a href=""><li class="hidden">Homepage8</li></a>
+                        <a href=""><li class="hidden">Homepage9</li></a>
+                    </ul>
+                </li>
+                <li class="bheart" id="bheart2" ><a href="" 
+                    id="bheart2li" class="heart">Shop</a>
+                    <ul class="hideul1" >
+                        <a href="" class="hidden"><li>Shop Sidebar Left</li></a>
+                        <a href="" class="hidden"><li>Shop Sidebar Right</li></a>
+                        <a href="" class="hidden"><li>Shop List View</li></a>
+                        <a href="" class="hidden"><li>Product Page</li></a>
+                    </ul>
+                </li>
+                <li class="bheart" id="bheart2" ><a href="" 
+                    id="bheart2li" class="heart">Blog</a>
+                    <ul class="hideul1" >
+                        <a href="" class="hidden"><li>Blog Sidebar Left</li></a>
+                        <a href="" class="hidden"><li>Blog Sidebar Right</li></a>
+                        <a href="" class="hidden"><li>Blog Single Post</li></a>
+                    </ul>
+                
+                </li>
+                <li class="bheart" id="bheart2" ><a href="" 
+                    id="bheart2li" class="heart">Portfolio</a>
+                    <ul class="hideul1"  >
+                        <a href="" class="hidden"><li>Portfolio 3 Columns</li></a>
+                        <a href="" class="hidden"><li>Portfolio 4 Columns</li></a>
+                        <a href="" class="hidden"><li>Portfolio Alternate</li></a>
+                        <a href="" class="hidden"><li>Portfolio Single</li></a> 
+                    </ul>
+                
+                </li>
+                <li class="bheart" id="bheart2" ><a href="" 
+                    id="bheart2li" class="heart">Features</a>
+                <div class="features">
+                    <ul class="featuresul">
+                        <h3>WOMENS</h3>
+                        <a class="fhov" href=""><li>Dresses</li></a>
+                        <a class="fhov" href=""><li>Rompers & Jumpsuits</li></a>
+                        <a class="fhov" href=""><li>Bodysuits</li></a>
+                        <a class="fhov" href=""><li>Shirts & Blouses</li></a>
+                        <a class="fhov" href=""><li>Coats & Jackets</li></a>
+                        <a class="fhov" href=""><li>Blazers</li></a>
+                    </ul>
+                    <ul class="featuresul">
+                        <h3>MENS</h3>
+                        <a class="fhov" href=""><li>T-Shirts & Vests</li></a>
+                        <a class="fhov" href=""><li>Sweaters & Cardigans</li></a>
+                        <a class="fhov" href=""><li>Hoodies & Sweats</li></a>
+                        <a class="fhov" href=""><li>Coats & Jackets</li></a>
+                        <a class="fhov" href=""><li>Shirts</li></a>
+                        <a class="fhov" href=""><li>Shorts</li></a>
+                    </ul>
+                    <ul class="featuresul">
+                        <h3>PAGES</h3>
+                        <a class="fhov" href=""><li><b> Shortcodes </b></li></a>
+                        <a class="fhov" href=""><li><b> Typography </b></li></a>
+                        <a class="fhov" href=""><li><b> Coming Soon </b></li></a>
+                        <a class="fhov" href=""><li><b> 404 Page </b></li></a>
+                        <a class="fhov" href=""><li><b> About </b></li></a>
+                        <a class="fhov" href=""><li><b> Login </b></li></a>
+                    </ul>
+                    <ul class="featuresul">
+                        <h3>HEADER STYLES</h3>
+                        <a class="fhov" href=""><li><b>Header style </b> 1</li></a>
+                        <a class="fhov" href=""><li><b> Header style 2 </b></li></a>
+                        <a class="fhov" href=""><li><b> Header style 3 </b></li></a>
+                        <a class="fhov" href=""><li><b> Header style 4 </b></li></a>
+                        <a class="fhov" href=""><li><b> Header style 5 </b></li></a>
+                    </ul>
+
+                    <div class="">
+                        <div class="" style="display: flex;justify-content: space-between;width: 250px;height: 100px;">
+                            <img src="https://jthemes.net/themes/html/bellashop/assets/img/preview/shop/top-sellers-2.jpg" alt="">
+                            <div class="">
+                                <h3 style="position: absolute;top: 5px;">Standart Produvt</h3>
+                                <h3 style="position: absolute;top: 20px;">Header</h3>
+                                </p class="f3" style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);position: absolute;top:50px;">&#9733;	&#9733;	&#9733;	&#9733; &#9734;</a></p>
+                                <div style="display: flex;justify-content: space-between;width: 150px;"><h3 style="color: green;position: absolute;top: 65px;">$400.00</h3>  <h3 style="position: absolute;top: 65px;right: 0px;"><del>$425.00</del>   </h3></div>
+                            </div>
+                        </div>
+            
+                        <div class="" style="position:absolute;top: 120px;">
+                            <div class="" style="display: flex;justify-content: space-between;width: 250px;height: 100px;">
+                                <img src="https://jthemes.net/themes/html/bellashop/assets/img/preview/shop/top-sellers-3.jpg" alt="">
+                                <div class="" >
+                                    <h3 style="position: absolute;top: -15px;">Standart Product</h3>
+                                    <h3>Header</h3>
+                                    </p class="f3" style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);position: absolute;top: 50px;">&#9733;	&#9733;	&#9733;	&#9733; &#9734;</a></p>
+                                    <div style="display: flex;justify-content: space-between;width: 150px;"><h3 style="color: green;">$400.00</h3>  <h3><del>$425.00</del>   </h3></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>             
+                </li>
+                <li class="bheart" id="bheart2">
+                    <a href="../men/men.html" id="bheart2li" class="heart">Men</a>
+                </li>
+                <li class="bheart" id="bheart2">
+                    <a href="women.html" id="bheart2li" class="heart">Women</a>
+                </li>
+                <li class="bheart" id="bheart2">
+                    <a href="" id="bheart2li" class="heart">Kids</a>
+                </li>
+                <li class="bheart" id="bheart2">
+                    <a href="" id="bheart2li" class="heart">New</a>
+                </li>
+                <li class="bheart" id="bheart2">
+                    <a href="" id="bheart2li" class="heart">Sale</a>
+                </li>
+                <li class="bheart" id="bheart2">
+                    <a href="" id="bheart2li" class="heart">Contact</a>
+                </li>
+                <!-- <li class="bheart" id="bheart2">
+                    <a href="../add/add.html" id="bheart2li" class="heart">Add Product</a>
+                </li> -->
+                <li class="bheart" id="bheart2">
+                    <a href="../../fetch js/index.html" id="bheart2li" class="heart"> Log in</a>
+                </li>
+                <li class="bheart" id="bheart2">
+                    <a href="../../fetch js/reg.html" id="bheart2li" class="heart"> To Register</a>
+                </li>
+                
+            
+
+            </div>
+        </nav>
+    </header>
+
+    <main >
+        <div class="blok">
+
+        </div>
+        <div class="slider" id="slider" style="position: relative;" >
+            <img id="sliderImg" src="" alt=""  width="100%" height="100%">
+            <!-- <button class="slayd right"></button>
+            <button class="slayd left"></button> -->
+            <div id="slideText" style="position: absolute;top:5%;z-index: 4;left: 10%;display: flex;
+            align-items: center;flex-direction: column;">
+            <p id="text" style="font-size: 400%; color: rgb(25, 25, 140); ">THE </p>
+            <p id="text1" style="font-size: 400%; color: rgb(25, 25, 140); ">BIGGEST</p>
+            <p id="slideTextSale" style="font-size: 900%;color: rgb(64, 224, 64);font-weight: 1000;font-family: inherit;">SALE</p>
+            <button class="shopno" >
+               <!-- <a href="containerProduct">  -->
+                    SHOP NOW
+               <!-- </a>  -->
+            </button>
+        </div>
+        <button id="slidePrevious"> < </button>
+        <button id="slideNext"> > </button>
+        </div>
+    
+
+
+        <div class="maindiv" id="mainDiv">
+            
+
+            <div style="display: flex;align-items: center;justify-content: space-between;width: 100%;height: 50px;" >
+
+                <div style="width: 30%;height: 1px;background-color: rgb(197, 197, 197);border: 1px solid  rgb(0, 0, 0);"></div>
+                <p href="" style="    font-size: 24px;font-weight: 300;line-height: 20px;">FEATURED - NEWEST TOP - SELLERS</p>
+                <div style="width: 30%;height: 1px;background-color: rgb(197, 197, 197);border: 1px solid  rgb(0, 0, 0);"></div>
+            </div>
+            <div style="width: 100%;display: flex;justify-content: center;padding: 2%;">
+                <input id="min" type="text" placeholder="Min Value" style="padding: 0.5%;" />
+                <input id="max" type="text" placeholder="Max Value" style="padding: 0.5%;" />
+                <button style="padding: 0.5%;" id="searchh">search</button>
+                <button style="padding: 0.5%;" id="antiSearch">Back to Products</button>
+                
+            </div> 
+            <div class="containerProduct" id="containerProduct">
+
+            </div>
+
+        
+       </div>
+
+
+    </main>
+    
+    <footer class="footer">
+        <ul class="footCom">
+            ABOUT US
+            <li>Our Mail: Lorem ipsum dolor sit amet.</li>
+            <li>Our Phone: +374 8426885</li>
+            <li>Our Partners: Nike</li>
+            <li>Our Phone: +374 8426885</li>
+            <li>Our Partners: Nike</li>
+            
+        </ul>
+        <ul class="footCom">
+            NEWS LETTER
+            <li>Lorem, ipsum dolor</li>
+            <input style="height: 28px;" type="text" placeholder="enter your mail">
+            <button class="bheart heart" >SUBSCRIBE</button>
+        
+           
+            
+        </ul>
+        <ul class="footCom">
+            INFORMATION
+            <li class="footComLi"><svg class="footComSvg " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg> ABOUT US</li>
+            <li class="footComLi"><svg class="footComSvg " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg> DELIVERY INFORMATION</li>
+            <li class="footComLi"><svg class="footComSvg " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg> CONTACT US</li>
+            <li class="footComLi"><svg class="footComSvg " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg> TERMS AND CONDITIONS</li>
+            <li class="footComLi"><svg class="footComSvg " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg> PRIVACY POLICY</li>
+            
+        </ul>
+        <ul class="footCom">
+            ITEM TAGS
+                <li> 
+                    <button class="bheart heart">FASHION</button>
+                    <button class="bheart heart">JEANS</button>
+                    <button class="bheart heart">TOP SELLERS</button>
+                </li>
+                <li>                    
+                    <button class="bheart heart">COMMERCE</button>
+                    <button class="bheart heart">HOT DEALS</button>
+                </li>
+                <li>                    
+                    <button class="bheart heart">SUPILLER</button>
+                    <button class="bheart heart">SHOP</button>
+                    <button class="bheart heart">THEM</button>
+                </li>
+                <li>                    
+                    <button class="bheart heart">WEBSITE</button>
+                    <button class="bheart heart">ISAMERCAN</button>
+                </li>
+                <li>
+                    <button class="bheart heart">THEMEFOREST</button>
+                </li>
+            
+
+            
+        </ul>
+        
+        
+    </footer>
+        
+
+
+    <script src=""></script>
+</body>
+</html>

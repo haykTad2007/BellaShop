@@ -1,0 +1,696 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+header{
+    position:fixed;    
+    width: 100%;
+    height: 26vh;
+ z-index: 100;
+ background-color: rgb(117, 152, 193);
+}
+.search{
+    display: flex;
+}
+.search.button{
+    position: absolute;
+    border: none;
+left: 15px;
+}
+
+.hedbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    /* background-color: rgb(52, 188, 188); */
+}
+.heart{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+.heart:hover {
+    color: white;
+}
+#card{
+    position: absolute;
+    background-color: white;
+     right:10%;
+    top: 100%; 
+}
+.cardUl{
+    display: none;
+    border: 1px solid black;
+}
+.cardUl li{
+    padding: 5px;
+    border-bottom: 1px solid grey;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.cardUl li:hover{
+    background-color: black;
+    color: white;
+}
+.cardUl>:last-child{
+    border-bottom: none
+}
+
+.containerProduct{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+a{
+    text-decoration: none;
+}
+.bheart{
+
+    background-color: rgb(157, 218, 218);
+    border: 2px solid grey;
+    padding: 6px 12px;
+    transition: 0.6s;
+    cursor: pointer;
+    
+    
+}
+.bheart:hover .heart{
+    color: rgb(231, 231, 231);
+}
+    .bheart:hover {
+        background-color: black;
+    }
+.nav{
+    height: 55px;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+
+    z-index: 1;
+    position: absolute;
+
+}
+li{
+    list-style-type: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    transition: 0.6s;
+}
+nav{
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.hideul1{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: rgb(244, 244, 244);
+    width: 100%;
+    transition: 0.6s;
+    
+}
+#bheart2{
+    border: none;
+     display: flex;
+     align-items: center;
+     height: 100%;
+     position: relative;
+     font-size: 100%;
+}
+#bheart2:hover .hideul1{
+    display: block;
+}
+.hidden{
+
+    background-color: rgb(193, 228, 255);
+    width: 200%;
+    height: 100%;
+    padding: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    font-size: 100%;
+}
+.hidden:hover {
+    background-color: antiquewhite;
+    transition: 0.6s;
+}
+.features{
+    display: flex;
+    display: none;
+    position: absolute;
+    width: 1200px;
+    height: 300px;
+    border: 1px solid black;
+    justify-content: space-between;
+    background-color: rgb(252, 252, 252);
+    left: -550%;
+    top: 100%;
+    transition: 0.6s;
+}
+.featuresul{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 0.6s;
+
+
+}
+.featuresdiv1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 100px;
+    transition: 0.6s;
+
+}
+.featuresdiv11{
+    position: relative;
+    width: 100px;
+    transition: 0.6s;
+
+}
+.featuresdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.6s;
+}
+.f1{
+    position: absolute;
+    top: 0px;
+}
+.f2{
+    position: absolute;
+    top: 20px;
+}
+a{
+    color: black;
+}
+#bheart2:hover .features{
+    display: block;
+    display:flex ;
+}
+.hideul1.a:hover {
+    color: green;
+}
+.fhov:hover {
+    color: green;
+}
+
+main{
+    width: 100%;
+
+    
+}
+.slider{
+    width: 100%;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+}
+.shopno{
+    width: 130px;height: 40px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.6s;
+}
+.shopno:hover {
+    background-color: rgb(129, 123, 123);
+}
+.maindiv{
+    display: flex;
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    align-items:stretch;
+    position: relative;
+}
+#MainDiv1{
+    position: relative;
+    width: 70%;
+    height: 250px;
+    left: 15%;
+    top: 5vh;
+}
+
+#MainDiv1Div1{
+    position: absolute;
+    width: 45%;
+    left: 2.5%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.8s;
+    background-color: #f3f3f3;
+
+
+}
+#MainDiv1Div2{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    left: 52.5%;
+    background-color: #f3f3f3;
+    overflow: hidden;
+}
+
+#MainDiv1Div1:hover .curtain{
+    background-color: #22A7F0;
+    opacity: 0.3;
+    transition: all 0.6s;
+    z-index: 2;
+}
+
+#MainDiv1Div1:hover #MainDiv1Div1Img {
+    height: 170%;
+    width: 80%;
+    top: -15%;
+}
+
+.curtain{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: all 0.6s;
+
+}
+#MainDiv1Div1Img{
+    position: absolute;
+    height: 150%;
+    width: 70%;
+    top: -10%;
+    left: 30%;
+    transition: 0.6s;
+}
+
+.borderDiv{
+    position: absolute;
+    z-index: 2;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    border: 1px solid #ffffff;
+}
+
+
+#MainDiv1Div2Img{
+    position: absolute;
+    z-index: 1;
+    width: 70%;
+    height: 150%;
+    right: 30%;
+    top: -10%;
+    transition: 0.6s;
+}
+
+
+.curtain2{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: all 0.6s;
+}
+
+.curtain1{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+
+#MainDiv1Div2:hover .curtain2{
+    background-color: #22A7F0;
+    opacity: 0.3;
+    transition: all 0.6s;
+    z-index: 2;
+}
+
+.borderDiv2{
+    position: absolute;
+    z-index: 2;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    border: 1px solid #ffffff;
+}
+
+#MainDiv1Div2:hover #MainDiv1Div2Img{
+    width: 80%;
+    height: 170%;
+    top: -15%;
+    transition: 0.6s;
+}
+
+
+#curtan1H3{
+    position: absolute;
+    width: 30%;
+    height: 15%;
+    left: 6%;
+    top: 20%;
+    background-color: #ffffff;
+    z-index: 11;
+    opacity: 0.8;
+    font-size: 1vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#curtan2H3{
+    position: absolute;
+    width: 45%;
+    height: 15%;
+    left: 6%;
+    top: 35.5%;
+    background-color: #ffffff;
+    z-index: 11;
+    opacity: 0.8;
+    font-size: 1.1vmax;
+    display: flex;
+    align-items: center;
+}
+
+#curtanDiv{
+    position: absolute;
+    width: 20%;
+    height: 15%;
+    background-color: #262626;
+    top: 65%;
+    left:6%;
+    z-index: 5;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8vmax;
+    color: white;
+    font-weight: 900;
+}
+
+#curtanDiv:hover{
+    background-color: rgb(118, 118, 118);
+}
+
+
+
+
+#curtan1H32{
+    position: absolute;
+    width: 30%;
+    height: 15%;
+    right: 6%;
+    top: 20%;
+    background-color: #ffffff;
+    z-index: 11;
+    opacity: 0.8;
+    font-size: 1vmax;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#curtan2H32{
+    position: absolute;
+    width: 45%;
+    height: 15%;
+    right: 6%;
+    top: 35.5%;
+    background-color: #ffffff;
+    z-index: 11;
+    opacity: 0.8;
+    font-size: 1.1vmax;
+    display: flex;
+    align-items: center;
+}
+
+#curtanDiv2{
+    position: absolute;
+    width: 20%;
+    height: 15%;
+    background-color: #262626;
+    top: 65%;
+    right:6%;
+    z-index: 5;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8vmax;
+    color: white;
+    font-weight: 900;
+}
+
+#curtanDiv2:hover{
+    background-color: rgb(167, 167, 167);
+}
+.product4{
+    width: 262px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+}
+#cont1{
+    display: none;
+    transition: 0.6s;
+}
+.product4:hover #cont1{
+    display: block;
+} 
+.product4:hover .cont{
+    width: 100%;
+}
+#korz:hover .korzin{
+    src: url('img/KORZINW.png');
+    
+}
+
+.bheart:hover .strelw{
+    src: url('img/strw.png');
+}
+.eye{
+
+    opacity: 0;
+    left: 90px;
+    transition: 0.6s
+}
+.product4:hover .eye{
+    opacity: 1;
+}
+.bheart:hover .strelw{
+    src: url('1ej/img/KORZINW.png');
+
+}
+.recentbox{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 360px;
+    justify-content: space-between;
+    align-items: stretch;
+    transition: 0.6s;
+
+}
+.recentbox1{
+    display: flex;
+    width:530px ;
+    height: 45%;
+    justify-content: space-between
+}
+.recolor{
+    color: #a5abb7;
+    transition: 0.6s;
+}
+.recolor:hover  {
+    color: rgb(0, 0, 0)
+}
+
+.brandclients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 163px;
+    height: 107px;
+    border: solid 3px #f3f4f6;
+    background-color: #f3f4f6;
+    transition: 1s;
+}
+
+.brandclients:hover {
+    border: 3px solid black;
+}
+
+.greenback{
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    background: rgb(106, 253, 162);
+    transition: 0.6s;
+    width: 199px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.recentbox1:hover .greenback{
+
+    opacity: 0.6;
+    
+}
+.topsellbox:hover .greenback{
+
+    opacity: 0.6;
+    
+}
+.topsell{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+    
+}
+.topsellbox{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+#antiSearch{
+    display: none;
+}
+.miniproduct{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1%;
+    flex-wrap: wrap;
+}
+.product4{
+    position: relative;
+}
+.blok{
+    width: 100%;
+    height: 26vh;
+    border: 3px solid green;
+}
+.footer{
+
+    width: 100%;
+    height:50vh ;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.footCom{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.footComLi {
+    cursor:pointer;
+    transition: 0.5s;
+    font-weight: 600
+}
+.footComLi:hover {
+    color: green;
+}
+.footComSvg{
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+}
+.footComLi:hover .footComSvg{
+    background-color: rgb(33, 187, 33);
+}
+.topselldiv{
+    padding-top: 3%;
+
+}
+.topselldivBut{
+    height: 85px;
+    border: 3px solid #3c3c3c;
+    width: 100%;
+    background: white;
+    padding: 3%;
+    transition: 0.5s;
+    position: relative;
+}
+.topselldivBut:hover {
+    background: #3c3c3c;
+    color: white;
+}
+.topsellSvg{
+    position: absolute;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    right: 25px;
+}
+#displayOff{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    background-color: #86888d82;
+    z-index: 998;
+    cursor:default;
+    /* color: rgb(35, 177, 177); */
+
+}
+#slidePrevious{
+    position: absolute;
+    top: 45%;
+    width: 30px;
+    height: 45px;
+    left: 15px;
+    background-color: rgb(238, 238, 238);
+    border:3px solid #86888d82;
+    
+}
+#slideNext{
+    position: absolute;
+    top: 45%;
+    width: 30px;
+    height: 45px;
+    right: 15px;
+    background-color: rgb(237, 237, 237);
+    border:3px solid #86888d82 ;
+    
+}

@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAYKOSHOP</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <script defer src="card.js"></script> -->
+
+</head>
+<body> 
+    <div id="displayOff"></div> 
+    <header>
+        <div class="hedbox">
+
+        <div class="search">
+            <input type="text" placeholder="What are you looking ?" style="height: 4vh; width: 100%;font-size: 100%;" id="search">
+            <button id="press" ><img  src="https://t4.ftcdn.net/jpg/03/05/43/17/360_F_305431718_eh07vqK6LRIjxixuTxATG5PFCQmGwNwQ.jpg" alt="" width="100%" height="20vh"></button>
+        </div>
+
+        <!-- <img src="https://jthemes.net/themes/html/bellashop/assets/img/logo-bella-shop.png" alt=""> -->
+        <h1 style="color: aquamarine;"> <i>HAYKOSHOP</i> </h1>
+
+        <div style="display: flex;">
+            <button class="bheart" ><a href="" class="heart" >&#10084;</a></button>
+            <button class="bheart" id="bheart1">
+                <svg id="strelka" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                <path class="heart "  fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+              </svg>
+            </button>
+            <ul style="display: flex;" >
+                <li  style="width: 100%;padding: 13%;border: 1px solid black; " class="bheart heart" id="cardbox">  CARD
+                    
+                    <div class="cardUl" id="card"  style="color: black;">
+                        <p id="noProduct">YOU HAVE NO PRODUCTS</p>
+                            
+                        </div>
+                        <!-- <p id="fullPrice"></p> -->
+                
+
+                </li>
+                <button class="bheart heart" id="open" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg>
+                </button>
+                <button class="bheart heart" id="close" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+                    </svg>
+                </button>
+            </ul>
+            
+
+        </div>
+
+        </div>
+
+
+        <nav class="nav">
+                <div style="display: flex;
+                justify-content: center;">
+
+                
+                <li class="bheart " id="bheart2"  >
+                    <a href="index.html" 
+                    id="bheart2li" class="heart">Homepage</a>
+                    <ul class="hideul1"     >
+                        <a href=""><li class="hidden">Homepage1</li></a>
+                        <a href=""><li class="hidden">Homepage2</li></a>
+                        <a href=""><li class="hidden">Homepage3</li></a>
+                        <a href=""><li class="hidden">Homepage4</li></a>
+                        <a href=""><li class="hidden">Homepage5</li></a>
+                        <a href=""><li class="hidden">Homepage6</li></a>
+                        <a href=""><li class="hidden">Homepage7</li></a>
+                        <a href=""><li class="hidden">Homepage8</li></a>
+                        <a href=""><li class="hidden">Homepage9</li></a>
+                    </ul>
+                </li>
+                <li class="bheart" id="bheart2" ><a href="" 
+                    id="bheart2li" class="heart">Shop</a>
+                    <ul class="hideul1" >
+                        <a href="" class="hidden"><li>Shop Sidebar Left</li></a>
+                        <a href="" class="hidden"><li>Shop Sidebar Right</li></a>
+                        <a href="" class="hidden"><li>Shop List View</li></a>
+                        <a href="" class="hidden"><li>Product Page</li></a>
+                    </ul>
+                </li>
+                <li class="bheart" id="bheart2" ><a href="" 
+                    id="bheart2li" class="heart">Blog</a>
+                    <ul class="hideul1" >
+                        <a href="" class="hidden"><li>Blog Sidebar Left</li></a>
+                        <a href="" class="hidden"><li>Blog Sidebar Right</li></a>
+                        <a href="" class="hidden"><li>Blog Single Post</li></a>
+                    </ul>
+                
+                </li>
+                <li class="bheart" id="bheart2" ><a href="" 
+                    id="bheart2li" class="heart">Portfolio</a>
+                    <ul class="hideul1"  >
+                        <a href="" class="hidden"><li>Portfolio 3 Columns</li></a>
+                        <a href="" class="hidden"><li>Portfolio 4 Columns</li></a>
+                        <a href="" class="hidden"><li>Portfolio Alternate</li></a>
+                        <a href="" class="hidden"><li>Portfolio Single</li></a> 
+                    </ul>
+                
+                </li>
+                <li class="bheart" id="bheart2" ><a href="" 
+                    id="bheart2li" class="heart">Features</a>
+                <div class="features">
+                    <ul class="featuresul">
+                        <h3>WOMENS</h3>
+                        <a class="fhov" href=""><li>Dresses</li></a>
+                        <a class="fhov" href=""><li>Rompers & Jumpsuits</li></a>
+                        <a class="fhov" href=""><li>Bodysuits</li></a>
+                        <a class="fhov" href=""><li>Shirts & Blouses</li></a>
+                        <a class="fhov" href=""><li>Coats & Jackets</li></a>
+                        <a class="fhov" href=""><li>Blazers</li></a>
+                    </ul>
+                    <ul class="featuresul">
+                        <h3>MENS</h3>
+                        <a class="fhov" href=""><li>T-Shirts & Vests</li></a>
+                        <a class="fhov" href=""><li>Sweaters & Cardigans</li></a>
+                        <a class="fhov" href=""><li>Hoodies & Sweats</li></a>
+                        <a class="fhov" href=""><li>Coats & Jackets</li></a>
+                        <a class="fhov" href=""><li>Shirts</li></a>
+                        <a class="fhov" href=""><li>Shorts</li></a>
+                    </ul>
+                    <ul class="featuresul">
+                        <h3>PAGES</h3>
+                        <a class="fhov" href=""><li><b> Shortcodes </b></li></a>
+                        <a class="fhov" href=""><li><b> Typography </b></li></a>
+                        <a class="fhov" href=""><li><b> Coming Soon </b></li></a>
+                        <a class="fhov" href=""><li><b> 404 Page </b></li></a>
+                        <a class="fhov" href=""><li><b> About </b></li></a>
+                        <a class="fhov" href=""><li><b> Login </b></li></a>
+                    </ul>
+                    <ul class="featuresul">
+                        <h3>HEADER STYLES</h3>
+                        <a class="fhov" href=""><li><b>Header style </b> 1</li></a>
+                        <a class="fhov" href=""><li><b> Header style 2 </b></li></a>
+                        <a class="fhov" href=""><li><b> Header style 3 </b></li></a>
+                        <a class="fhov" href=""><li><b> Header style 4 </b></li></a>
+                        <a class="fhov" href=""><li><b> Header style 5 </b></li></a>
+                    </ul>
+
+                    <div class="">
+                        <div class="" style="display: flex;justify-content: space-between;width: 250px;height: 100px;">
+                            <img src="https://jthemes.net/themes/html/bellashop/assets/img/preview/shop/top-sellers-2.jpg" alt="">
+                            <div class="">
+                                <h3 style="position: absolute;top: 5px;">Standart Produvt</h3>
+                                <h3 style="position: absolute;top: 20px;">Header</h3>
+                                </p class="f3" style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);position: absolute;top:50px;">&#9733;	&#9733;	&#9733;	&#9733; &#9734;</a></p>
+                                <div style="display: flex;justify-content: space-between;width: 150px;"><h3 style="color: green;position: absolute;top: 65px;">$400.00</h3>  <h3 style="position: absolute;top: 65px;right: 0px;"><del>$425.00</del>   </h3></div>
+                            </div>
+                        </div>
+            
+                        <div class="" style="position:absolute;top: 120px;">
+                            <div class="" style="display: flex;justify-content: space-between;width: 250px;height: 100px;">
+                                <img src="https://jthemes.net/themes/html/bellashop/assets/img/preview/shop/top-sellers-3.jpg" alt="">
+                                <div class="" >
+                                    <h3 style="position: absolute;top: -15px;">Standart Product</h3>
+                                    <h3>Header</h3>
+                                    </p class="f3" style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);position: absolute;top: 50px;">&#9733;	&#9733;	&#9733;	&#9733; &#9734;</a></p>
+                                    <div style="display: flex;justify-content: space-between;width: 150px;"><h3 style="color: green;">$400.00</h3>  <h3><del>$425.00</del>   </h3></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>             
+                </li>
+                <li class="bheart" id="bheart2">
+                    <a href="page/men/men.html" id="bheart2li" class="heart">Men</a>
+                </li>
+                <li class="bheart" id="bheart2">
+                    <a href="page/women/women.html" id="bheart2li" class="heart">Women</a>
+                </li>
+                <li class="bheart" id="bheart2">
+                    <a href="" id="bheart2li" class="heart">Kids</a>
+                </li>
+                <li class="bheart" id="bheart2">
+                    <a href="" id="bheart2li" class="heart">New</a>
+                </li>
+                <li class="bheart" id="bheart2">
+                    <a href="" id="bheart2li" class="heart">Sale</a>
+                </li>
+                <li class="bheart" id="bheart2">
+                    <a href="" id="bheart2li" class="heart">Contact</a>
+                </li>
+                <!-- <li class="bheart" id="bheart2">
+                    <a href="page/add/add.html" id="bheart2li" class="heart">Add Product</a>
+                </li> -->
+                <li class="bheart" id="bheart2">
+                    <a href="fetch js/index.html" id="bheart2li" class="heart"> Log in</a>
+                </li>
+                <li class="bheart" id="bheart2">
+                    <a href="fetch js/reg.html" id="bheart2li" class="heart"> To Register</a>
+                </li>
+                
+            
+
+            </div>
+        </nav>
+    </header>
+
+    <main >
+        <div class="blok">
+
+        </div>
+        <div class="slider" id="slider" style="position: relative;" >
+            <img id="sliderImg" src="" alt=""  width="100%" height="100%">
+            <!-- <button class="slayd right"></button>
+            <button class="slayd left"></button> -->
+            <div id="slideText" style="position: absolute;top:5%;z-index: 4;left: 10%;display: flex;
+            align-items: center;flex-direction: column;">
+            <p id="text" style="font-size: 400%; color: rgb(25, 25, 140); ">THE </p>
+            <p id="text1" style="font-size: 400%; color: rgb(25, 25, 140); ">BIGGEST</p>
+            <p id="slideTextSale" style="font-size: 900%;color: rgb(64, 224, 64);font-weight: 1000;font-family: inherit;">SALE</p>
+            <button class="shopno" >
+               <!-- <a href="containerProduct">  -->
+                    SHOP NOW
+               <!-- </a>  -->
+            </button>
+        </div>
+        <button id="slidePrevious"> < </button>
+        <button id="slideNext"> > </button>
+        </div>
+        <!-- <div id="MainDiv1">
+            <div id="MainDiv1Div1">
+              <img id="MainDiv1Div1Img" src="assets/img/product/mard3.png" alt="" />
+              <div class="curtain"></div>
+    
+              <div class="curtain1"></div>
+    
+              <h3 id="curtan1H3">LOREM IPSUM</h3>
+              <h3 id="curtan2H3">Lorem ipsum dolor sit.</h3>
+              <div id="curtanDiv">SHOP NOW</div>
+    
+              <div class="borderDiv"></div>
+            </div>
+    
+            <div id="MainDiv1Div2">
+              <img id="MainDiv1Div2Img" src="assets/img/product/mard4.png" alt="" />
+              <div class="curtain"></div>
+    
+              <div class="curtain2"></div>
+    
+              <h3 id="curtan1H32">LOREM IPSUM</h3>
+              <h3 id="curtan2H32">Lorem ipsum dolor sit.</h3>
+              <div id="curtanDiv2">SHOP NOW</div>
+    
+              <div class="borderDiv2"></div>
+            </div>
+          </div> -->
+
+
+        <div class="maindiv" id="mainDiv">
+            
+
+            <div style="display: flex;align-items: center;justify-content: space-between;width: 100%;height: 50px;" >
+
+                <div style="width: 30%;height: 1px;background-color: rgb(197, 197, 197);border: 1px solid  rgb(0, 0, 0);"></div>
+                <p href="" style="    font-size: 24px;font-weight: 300;line-height: 20px;">FEATURED - NEWEST TOP - SELLERS</p>
+                <div style="width: 30%;height: 1px;background-color: rgb(197, 197, 197);border: 1px solid  rgb(0, 0, 0);"></div>
+            </div>
+            <div style="width: 100%;display: flex;justify-content: center;padding: 2%;">
+                <input id="min" type="text" placeholder="Min Value" style="padding: 0.5%;" />
+                <input id="max" type="text" placeholder="Max Value" style="padding: 0.5%;" />
+                <button style="padding: 0.5%;" id="searchh">search</button>
+                <button style="padding: 0.5%;" id="antiSearch">Back to Products</button>
+                
+            </div> 
+            <div class="containerProduct" id="containerProduct">
+
+            </div>
+
+            <div style="width: 100%;height:180px ;display: flex;align-items: center;justify-content: center">
+
+                <div style="background-color: #00b16a;;display: flex;align-items: center;justify-content: center;height: 104px;width: 100%;">
+                    <div style="border: 1px solid white;background-color: #00b16a;;display: flex;align-items: center;justify-content: center;width: 95%;height: 74px;">
+                        <h2 style="    font-size: 30px;
+                    font-weight: 900;    text-transform: uppercase;color: white;"> 
+                        FREE SHIPPING ON ALL ORDERS OVER $45
+                    </h2>
+                </div>
+            </div>
+            </div>
+            
+            <div style="display: flex;align-items: center;justify-content: space-between;width: 100%;height: 50px;" >
+
+                <div style="width: 33%;height: 1px;background-color: rgb(197, 197, 197);border: 1px solid  rgb(0, 0, 0);"></div>
+                <p href="" style="    font-size: 24px;font-weight: 300;line-height: 20px;">TOP RATED PRODUCTS</p>
+                <div style="width: 33%;height: 1px;background-color: rgb(197, 197, 197);border: 1px solid  rgb(0, 0, 0);"></div>
+            </div>
+          
+            
+<!--              ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, -->
+
+
+
+
+
+            <div class="miniproduct">
+
+                
+            
+            <div class="product4" style="width: 180px;height: 320px;">
+                <a href=""><img src="https://cdn-icons-png.flaticon.com/512/25/25186.png " width="80px" height="80px"  style="position: absolute;z-index: 8;top: 80px;left: 40px;" class="eye" alt=""> </a>
+                <img src="assets/img/product/top-rated-1.jpg" alt="">
+                <p>Standart Product Header</p>
+            </p  style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);">&#9733;	&#9733;	&#9733;	&#9733; &#9734;</a></p>
+                <div style="display: flex;justify-content: space-around;width: 50%;"><span style="color: green;font-size: large;font-weight: 900;">$400</span><del style="font-size: large;font-weight: 100;">$425</del></div>
+                <div class="cont" style="display: flex;justify-content: space-between;">
+                    <button id="cont1" style="height: 35px;width: 40px;" class="bheart">
+                        <a href="" class="heart" style="height: 35px;">&#10084;</a>
+                    </button>
+                    <button class="bheart" style="height: 35px;list-style-type: none;text-decoration: none;width: 120px;font-size:13px;font-weight: 600;"> 
+                        <a href="" class="heart"> ADD TO CARD</a>
+                    </button>
+                    <button class="bheart" id="cont1" style=" height: 35px;list-style-type: none;text-decoration: none;width: 40px;font-size:14px;font-weight: 600;"><a href="" class="heart" id="korz" style="width: 100%;"> <img src="assets/img/KORZIN.jpg" alt="" width="15px" height="15px" class="korzin"></a>	</button>
+                </div>
+            </div>
+            
+            <div class="product4" style="width: 180px;height: 320px;">
+                <a href=""><img src="https://cdn-icons-png.flaticon.com/512/25/25186.png " width="80px" height="80px"  style="position: absolute;z-index: 8;top: 80px;left: 40px;" class="eye" alt=""> </a>
+                <img src="assets/img/product/top-rated-2.jpg" alt="">
+                <p>Standart Product Header</p>
+            </p  style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);">&#9733;	&#9733;	&#9733;	&#9733; &#9734;</a></p>
+                <div style="display: flex;justify-content: space-around;width: 50%;"><span style="color: green;font-size: large;font-weight: 900;">$400</span><del style="font-size: large;font-weight: 100;">$425</del></div>
+                <div class="cont" style="display: flex;justify-content: space-between;">
+                    <button id="cont1" style="height: 35px;width: 40px;" class="bheart">
+                        <a href="" class="heart" style="height: 35px;">&#10084;</a>
+                    </button>
+                    <button class="bheart" style="height: 35px;list-style-type: none;text-decoration: none;width: 120px;font-size:13px;font-weight: 600;"> 
+                        <a href="" class="heart"> ADD TO CARD</a>
+                    </button>
+                    <button class="bheart" id="cont1" style=" height: 35px;list-style-type: none;text-decoration: none;width: 40px;font-size:14px;font-weight: 600;"><a href="" class="heart" id="korz" style="width: 100%;"> <img src="assets/img/KORZIN.jpg" alt="" width="15px" height="15px" class="korzin"></a>	</button>
+                </div>
+            </div>
+
+            <div class="product4" style="width: 180px;height: 320px;">
+                <a href=""><img src="https://cdn-icons-png.flaticon.com/512/25/25186.png " width="80px" height="80px"  style="position: absolute;z-index: 8;top: 80px;left: 40px;" class="eye" alt=""> </a>
+                <img src="assets/img/product/top-rated-3.jpg" alt="">
+                <p>Standart Product Header</p>
+            </p  style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);">&#9733;	&#9733;	&#9733;	&#9733; &#9734;</a></p>
+                <div style="display: flex;justify-content: space-around;width: 50%;"><span style="color: green;font-size: large;font-weight: 900;">$400</span><del style="font-size: large;font-weight: 100;">$425</del></div>
+                <div class="cont" style="display: flex;justify-content: space-between;">
+                    <button id="cont1" style="height: 35px;width: 40px;" class="bheart">
+                        <a href="" class="heart" style="height: 35px;">&#10084;</a>
+                    </button>
+                    <button class="bheart" style="height: 35px;list-style-type: none;text-decoration: none;width: 120px;font-size:13px;font-weight: 600;"> 
+                        <a href="" class="heart"> ADD TO CARD</a>
+                    </button>
+                    <button class="bheart" id="cont1" style=" height: 35px;list-style-type: none;text-decoration: none;width: 40px;font-size:14px;font-weight: 600;"><a href="" class="heart" id="korz" style="width: 100%;"> <img src="assets/img/KORZIN.jpg" alt="" width="15px" height="15px" class="korzin"></a>	</button>
+                </div>
+            </div>
+
+            <div class="product4" style="width: 180px;height: 320px;">
+                <a href=""><img src="https://cdn-icons-png.flaticon.com/512/25/25186.png " width="80px" height="80px"  style="position: absolute;z-index: 8;top: 80px;left: 40px;" class="eye" alt=""> </a>
+                <img src="assets/img/product/top-rated-4.jpg" alt="">
+                <p>Standart Product Header</p>
+            </p  style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);">&#9733;	&#9733;	&#9733;	&#9733; &#9734;</a></p>
+                <div style="display: flex;justify-content: space-around;width: 50%;"><span style="color: green;font-size: large;font-weight: 900;">$400</span><del style="font-size: large;font-weight: 100;">$425</del></div>
+                <div class="cont" style="display: flex;justify-content: space-between;">
+                    <button id="cont1" style="height: 35px;width: 40px;" class="bheart">
+                        <a href="" class="heart" style="height: 35px;">&#10084;</a>
+                    </button>
+                    <button class="bheart" style="height: 35px;list-style-type: none;text-decoration: none;width: 120px;font-size:13px;font-weight: 600;"> 
+                        <a href="" class="heart"> ADD TO CARD</a>
+                    </button>
+                    <button class="bheart" id="cont1" style=" height: 35px;list-style-type: none;text-decoration: none;width: 40px;font-size:14px;font-weight: 600;"><a href="" class="heart" id="korz" style="width: 100%;"> <img src="assets/img/KORZIN.jpg" alt="" width="15px" height="15px" class="korzin"></a>	</button>
+                </div>
+            </div>
+
+            <div class="product4" style="width: 180px;height: 320px;">
+                <a href=""><img src="https://cdn-icons-png.flaticon.com/512/25/25186.png " width="80px" height="80px"  style="position: absolute;z-index: 8;top: 80px;left: 40px;" class="eye" alt=""> </a>
+                <img src="assets/img/product/top-rated-5.jpg" alt="">
+                <p>Standart Product Header</p>
+            </p  style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);">&#9733;	&#9733;	&#9733;	&#9733; &#9734;</a></p>
+                <div style="display: flex;justify-content: space-around;width: 50%;"><span style="color: green;font-size: large;font-weight: 900;">$400</span><del style="font-size: large;font-weight: 100;">$425</del></div>
+                <div class="cont" style="display: flex;justify-content: space-between;">
+                    <button id="cont1" style="height: 35px;width: 40px;" class="bheart">
+                        <a href="" class="heart" style="height: 35px;">&#10084;</a>
+                    </button>
+                    <button class="bheart" style="height: 35px;list-style-type: none;text-decoration: none;width: 120px;font-size:13px;font-weight: 600;"> 
+                        <a href="" class="heart"> ADD TO CARD</a>
+                    </button>
+                    <button class="bheart" id="cont1" style=" height: 35px;list-style-type: none;text-decoration: none;width: 40px;font-size:14px;font-weight: 600;"><a href="" class="heart" id="korz" style="width: 100%;"> <img src="assets/img/KORZIN.jpg" alt="" width="15px" height="15px" class="korzin"></a>	</button>
+                </div>
+            </div>
+
+            <div class="product4" style="width: 180px;height: 320px;">
+                <a href=""><img src="https://cdn-icons-png.flaticon.com/512/25/25186.png " width="80px" height="80px"  style="position: absolute;z-index: 8;top: 80px;left: 40px;" class="eye" alt=""> </a>
+                <img src="assets/img/product/top-rated-6.jpg" alt="">
+                <p>Standart Product Header</p>
+            </p  style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);">&#9733;	&#9733;	&#9733;	&#9733; &#9734;</a></p>
+                <div style="display: flex;justify-content: space-around;width: 50%;"><span style="color: green;font-size: large;font-weight: 900;">$400</span><del style="font-size: large;font-weight: 100;">$425</del></div>
+                <div class="cont" style="display: flex;justify-content: space-between;">
+                    <button id="cont1" style="height: 35px;width: 40px;" class="bheart">
+                        <a href="" class="heart" style="height: 35px;">&#10084;</a>
+                    </button>
+                    <button class="bheart" style="height: 35px;list-style-type: none;text-decoration: none;width: 120px;font-size:13px;font-weight: 600;"> 
+                        <a href="" class="heart"> ADD TO CARD</a>
+                    </button>
+                    <button class="bheart" id="cont1" style=" height: 35px;list-style-type: none;text-decoration: none;width: 40px;font-size:14px;font-weight: 600;"><a href="" class="heart" id="korz" style="width: 100%;"> <img src="assets/img/KORZIN.jpg" alt="" width="15px" height="15px" class="korzin"></a>	</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+            <div style="display: flex;align-items: center;justify-content: space-between;width: 100%;height: 200px;" >
+                <h2 href="" style="    font-size: 24px;font-weight: 300;line-height: 20px;">OUR RECENT POSTS</h2>
+                <div style="width: 75%;height: 1px;background-color: rgb(197, 197, 197);border: 1px solid  rgb(0, 0, 0);"></div>
+            </div>
+            
+            <div class="recentbox" >
+                <div class="recentbox1">
+
+                    <div class="greenback"> 
+                        <p href="" style="font-size: 40px;color: rgb(255, 255, 255);font-weight: 900;">+</p>                       
+                    </div>
+                    <img class="greenback1" src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/247616b5-1d3b-4777-abbb-d5e08a924b78/go-flyease-easy-on-off-shoes-LGmqKx.png" alt="" height="140px" width="37.5%">
+                    <div class="recentbox2x">
+                        <div>
+                            <span style="color: #00b16a;    font-size: 18px;font-weight: 900;line-height: 18px;">Shoes</span>
+                            <span style="color: #00b16a;    font-size: 18px;font-weight: 900;line-height: 18px; "> / </span>
+                            <span style="color: #00b16a;    font-size: 18px;font-weight: 900;line-height: 18px;  "> Dress</span>
+                        </div>
+                        <br>
+
+                        <p style="font-size: 18px;font-weight: 300;">Standard Post Comment Header Here</p>
+                         <br>
+                        <p>Fusce gravida interdum eros a mollis. Sed non</p>
+                        <p>lorem varius, volutpat nisl in, laoreet ante.</p>
+                        <div style="margin-top: 10px;font-size: 15px;line-height: 18px; color: #a5abb7;">
+                            <span>6th June 2014 /</span>
+                            <a href="" class="recolor">🗨️ 27</a>
+                            <span> / </span>
+                            <a href="" class="recolor" >  &#10084; 18 </a>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="recentbox1">
+                    <div class="greenback"> 
+                        <p href="" style="font-size: 40px;color: rgb(255, 255, 255);font-weight: 900;">+</p>                       
+                    </div>
+                    <img class="greenback1" src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b08dcac2-6c23-4373-88ff-62fb337878f4/air-force-1-07-womens-shoes-wqlbRX.png" alt="" height="140px" width="37.5%">
+                    <div class="recentbox2x">
+                        <div>
+                            <span style="color: #00b16a;    font-size: 18px;font-weight: 900;line-height: 18px;">Shoes</span>
+                            <span style="color: #00b16a;    font-size: 18px;font-weight: 900;line-height: 18px; "> / </span>
+                            <span style="color: #00b16a;    font-size: 18px;font-weight: 900;line-height: 18px;  "> Dress</span>
+                        </div>
+                        <br>
+
+                        <p style="font-size: 18px;font-weight: 300;">Standard Post Comment Header Here</p>
+                         <br>
+                        <p>Fusce gravida interdum eros a mollis. Sed non</p>
+                        <p>lorem varius, volutpat nisl in, laoreet ante.</p>
+                        <div style="margin-top: 10px;font-size: 15px;line-height: 18px; color: #a5abb7;">
+                            <span>6th June 2014 /</span>
+                            <a href="" class="recolor">🗨️ 27</a>
+                            <span> / </span>
+                            <a href="" class="recolor" >  &#10084; 18 </a>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="recentbox1">
+                    <div class="greenback"> 
+                        <p href="" style="font-size: 40px;color: rgb(255, 255, 255);font-weight: 900;">+</p>                       
+                    </div>
+                    <img class="greenback1" src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/s6dp2gck3oukxj9csz5y/air-max-270-mens-shoes-KkLcGR.png" alt="" height="140px" width="37.5%">
+                    <div class="recentbox2x">
+                        <div>
+                            <span style="color: #00b16a;    font-size: 18px;font-weight: 900;line-height: 18px;">Shoes</span>
+                            <span style="color: #00b16a;    font-size: 18px;font-weight: 900;line-height: 18px; "> / </span>
+                            <span style="color: #00b16a;    font-size: 18px;font-weight: 900;line-height: 18px;  "> Dress</span>
+                        </div>
+                        <br>
+
+                        <p style="font-size: 18px;font-weight: 300;">Standard Post Comment Header Here</p>
+                         <br>
+                        <p>Fusce gravida interdum eros a mollis. Sed non</p>
+                        <p>lorem varius, volutpat nisl in, laoreet ante.</p>
+                        <div style="margin-top: 10px;font-size: 15px;line-height: 18px; color: #a5abb7;">
+                            <span>6th June 2014 /</span>
+                            <a href="" class="recolor">🗨️ 27</a>
+                            <span> / </span>
+                            <a href="" class="recolor" >  &#10084; 18 </a>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="recentbox1">
+                    <div class="greenback"> 
+                        <p href="" style="font-size: 40px;color: rgb(255, 255, 255);font-weight: 900;">+</p>                       
+                    </div>
+                    <img class="greenback1" src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f6592635-0882-4a7b-aa17-fb5aedc42288/air-jordan-1-elevate-high-womens-shoes-BCspwg.png" alt="" height="140px" width="37.5%">
+                    <div class="recentbox2x">
+                        <div>
+                            <span style="color: #00b16a;    font-size: 18px;font-weight: 900;line-height: 18px;">Shoes</span>
+                            <span style="color: #00b16a;    font-size: 18px;font-weight: 900;line-height: 18px; "> / </span>
+                            <span style="color: #00b16a;    font-size: 18px;font-weight: 900;line-height: 18px;  "> Dress</span>
+                        </div>
+                        <br>
+
+                        <p style="font-size: 18px;font-weight: 300;">Standard Post Comment Header Here</p>
+                         <br>
+                        <p>Fusce gravida interdum eros a mollis. Sed non</p>
+                        <p>lorem varius, volutpat nisl in, laoreet ante.</p>
+                        <div style="margin-top: 10px;font-size: 15px;line-height: 18px; color: #a5abb7;">
+                            <span>6th June 2014 /</span>
+                            <a href="" class="recolor">🗨️ 27</a>
+                            <span> / </span>
+                            <a href="" class="recolor" >  &#10084; 18 </a>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+
+            <div style="display: flex;align-items: center;justify-content: space-between;width: 100%;height: 140px;" >
+                <div style="width: 40%;height: 1px;background-color: rgb(197, 197, 197);border: 1px solid  rgb(0, 0, 0);"></div>
+                <h1 href="" style="    font-size: 24px;font-weight: 300;line-height: 20px;">BRAND & CLIENTS</h1>
+                <div style="width: 40%;height: 1px;background-color: rgb(197, 197, 197);border: 1px solid  rgb(0, 0, 0);"></div>
+            </div>
+
+            <div class="miniproduct">
+        
+            <a href="">
+                <div class="brandclients">
+                    <p>BRAND</p>
+                    <p>LOGO</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="brandclients">
+                    <p>BRAND</p>
+                    <p>LOGO</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="brandclients">
+                    <p>BRAND</p>
+                    <p>LOGO</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="brandclients">
+                    <p>BRAND</p>
+                    <p>LOGO</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="brandclients">
+                    <p>BRAND</p>
+                    <p>LOGO</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="brandclients">
+                    <p>BRAND</p>
+                    <p>LOGO</p>
+                </div>
+            </a>
+        </div>
+
+            <div class="topsell">
+                <div class="" style="display: flex;justify-content: space-between;align-items: center;height: 60px;">
+                    <h3>TOP SELLERS</h3>
+                    <button class="bheart" style="border: 3px solid rgb(168, 168, 168);height: 35px;"><p class="heart">SEE ALL</p></button>
+                </div>
+
+                <div class="topsellbox" >
+                    <div class="greenback" style="width:110px ;height: 90px;width: 70px;"> 
+                        <p href="" style="font-size: 40px;color: rgb(255, 255, 255);font-weight: 900;">+</p>                       
+                    </div>
+                        <img src="https://jthemes.net/themes/html/bellashop/assets/img/preview/shop/top-sellers-1.jpg" alt="" height="90px" width="70px">
+                    <div class="" style="height: 60px; display: flex;flex-direction: column;justify-content: space-between;">
+                            <h4>Standart Product Header</h4>
+                        </p  style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);">&#9733;	&#9733;	&#9733;	&#9733; &#9734;</a></p>
+                        <div style="display: flex;justify-content: space-around;width: 50%;"><span style="color: green;font-size: large;font-weight: 900;">$400</span><del style="font-size: large;font-weight: 100;">$425</del></div>
+                    </div>
+                </div> 
+
+                <div class="topsellbox" >
+                    <div class="greenback" style="width:110px ;height: 90px;width: 70px;"> 
+                        <p href="" style="font-size: 40px;color: rgb(255, 255, 255);font-weight: 900;">+</p>                       
+                    </div>
+                        <img src="https://jthemes.net/themes/html/bellashop/assets/img/preview/shop/top-sellers-2.jpg" alt="" height="90px" width="70px">
+                    <div class="" style="height: 60px; display: flex;flex-direction: column;justify-content: space-between;">
+                            <h4>Standart Product Header</h4>
+                        </p  style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);">&#9733;	&#9733;	&#9733;	&#9733; &#9734;</a></p>
+                        <div style="display: flex;justify-content: space-around;width: 50%;"><span style="color: green;font-size: large;font-weight: 900;">$400</span><del style="font-size: large;font-weight: 100;">$425</del></div>
+                    </div>
+                </div>
+                <div class="topsellbox" >
+                    <div class="greenback" style="width:110px ;height: 90px;width: 70px;"> 
+                        <p href="" style="font-size: 40px;color: rgb(255, 255, 255);font-weight: 900;">+</p>                       
+                    </div>
+                        <img src="https://jthemes.net/themes/html/bellashop/assets/img/preview/shop/top-sellers-3.jpg" alt="" height="90px" width="70px">
+                    <div class="" style="height: 60px; display: flex;flex-direction: column;justify-content: space-between;">
+                            <h4>Standart Product Header</h4>
+                        </p  style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);">&#9733;	&#9733;	&#9733;	&#9733; &#9734;</a></p>
+                        <div style="display: flex;justify-content: space-around;width: 50%;"><span style="color: green;font-size: large;font-weight: 900;">$400</span><del style="font-size: large;font-weight: 100;">$425</del></div>
+                    </div>
+                </div> 
+                <div class="topselldiv">
+                    <div class="topselldivBut"  >
+                        <h2>BUY 1 GET 1</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <svg class="topsellSvg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gift-fill" viewBox="0 0 16 16">
+                            <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7h6zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9H2.5z"/>
+                          </svg>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="topsell">
+                <div class="" style="display: flex;justify-content: space-between;align-items: center;height: 60px;">
+                    <h3>TOP NEWS</h3>
+                    <button class="bheart" style="border: 3px solid rgb(168, 168, 168);height: 35px;"><p class="heart">SEE ALL</p></button>
+                </div>
+
+                <div class="topsellbox" >
+                    <div class="greenback" style="width:110px ;height: 90px;width: 70px;"> 
+                        <p href="" style="font-size: 40px;color: rgb(255, 255, 255);font-weight: 900;">+</p>                       
+                    </div>
+                        <img src="https://jthemes.net/themes/html/bellashop/assets/img/preview/shop/top-sellers-1.jpg" alt="" height="90px" width="70px">
+                    <div class="" style="height: 60px; display: flex;flex-direction: column;justify-content: space-between;">
+                            <h4>Standart Product Header</h4>
+                        </p  style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);">&#9733;	&#9733;	&#9733;	&#9733; &#9734;</a></p>
+                        <div style="display: flex;justify-content: space-around;width: 50%;"><span style="color: green;font-size: large;font-weight: 900;">$400</span><del style="font-size: large;font-weight: 100;">$425</del></div>
+                    </div>
+                </div> 
+
+                <div class="topsellbox" >
+                    <div class="greenback" style="width:110px ;height: 90px;width: 70px;"> 
+                        <p href="" style="font-size: 40px;color: rgb(255, 255, 255);font-weight: 900;">+</p>                       
+                    </div>
+                        <img src="https://jthemes.net/themes/html/bellashop/assets/img/preview/shop/top-sellers-2.jpg" alt="" height="90px" width="70px">
+                    <div class="" style="height: 60px; display: flex;flex-direction: column;justify-content: space-between;">
+                            <h4>Standart Product Header</h4>
+                        </p  style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);">&#9733;	&#9733;	&#9733;	&#9733; &#9734;</a></p>
+                        <div style="display: flex;justify-content: space-around;width: 50%;"><span style="color: green;font-size: large;font-weight: 900;">$400</span><del style="font-size: large;font-weight: 100;">$425</del></div>
+                    </div>
+                </div>
+                <div class="topsellbox" >
+                    <div class="greenback" style="width:110px ;height: 90px;width: 70px;"> 
+                        <p href="" style="font-size: 40px;color: rgb(255, 255, 255);font-weight: 900;">+</p>                       
+                    </div>
+                        <img src="https://jthemes.net/themes/html/bellashop/assets/img/preview/shop/top-sellers-3.jpg" alt="" height="90px" width="70px">
+                    <div class="" style="height: 60px; display: flex;flex-direction: column;justify-content: space-between;">
+                            <h4>Standart Product Header</h4>
+                        </p  style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);">&#9733;	&#9733;	&#9733;	&#9733; &#9734;</a></p>
+                        <div style="display: flex;justify-content: space-around;width: 50%;"><span style="color: green;font-size: large;font-weight: 900;">$400</span><del style="font-size: large;font-weight: 100;">$425</del></div>
+                    </div>
+                </div> 
+                <div class="topselldiv">
+                    <div class="topselldivBut"  >
+                        <h2>CALL TO FREE</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <svg class="topsellSvg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
+                            <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
+                          </svg>
+
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="topsell">
+                <div class="" style="display: flex;justify-content: space-between;align-items: center;height: 60px;">
+                    <h3>TOP ACCESSORIES</h3>
+                    <button class="bheart" style="border: 3px solid rgb(168, 168, 168);height: 35px;"><p class="heart">SEE ALL</p></button>
+                </div>
+
+                <div class="topsellbox" >
+                    <div class="greenback" style="width:110px ;height: 90px;width: 70px;"> 
+                        <p href="" style="font-size: 40px;color: rgb(255, 255, 255);font-weight: 900;">+</p>                       
+                    </div>
+                        <img src="https://jthemes.net/themes/html/bellashop/assets/img/preview/shop/top-sellers-1.jpg" alt="" height="90px" width="70px">
+                    <div class="" style="height: 60px; display: flex;flex-direction: column;justify-content: space-between;">
+                            <h4>Standart Product Header</h4>
+                        </p  style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);">&#9733;	&#9733;	&#9733;	&#9733; &#9734;</a></p>
+                        <div style="display: flex;justify-content: space-around;width: 50%;"><span style="color: green;font-size: large;font-weight: 900;">$400</span><del style="font-size: large;font-weight: 100;">$425</del></div>
+                    </div>
+                </div> 
+
+                <div class="topsellbox" >
+                    <div class="greenback" style="width:110px ;height: 90px;width: 70px;"> 
+                        <p href="" style="font-size: 40px;color: rgb(255, 255, 255);font-weight: 900;">+</p>                       
+                    </div>
+                        <img src="https://jthemes.net/themes/html/bellashop/assets/img/preview/shop/top-sellers-2.jpg" alt="" height="90px" width="70px">
+                    <div class="" style="height: 60px; display: flex;flex-direction: column;justify-content: space-between;">
+                            <h4>Standart Product Header</h4>
+                        </p  style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);">&#9733;	&#9733;	&#9733;	&#9733; &#9734;</a></p>
+                        <div style="display: flex;justify-content: space-around;width: 50%;"><span style="color: green;font-size: large;font-weight: 900;">$400</span><del style="font-size: large;font-weight: 100;">$425</del></div>
+                    </div>
+                </div>
+                <div class="topsellbox" >
+                    <div class="greenback" style="width:110px ;height: 90px;width: 70px;"> 
+                        <p href="" style="font-size: 40px;color: rgb(255, 255, 255);font-weight: 900;">+</p>                       
+                    </div>
+                        <img src="https://jthemes.net/themes/html/bellashop/assets/img/preview/shop/top-sellers-3.jpg" alt="" height="90px" width="70px">
+                    <div class="" style="height: 60px; display: flex;flex-direction: column;justify-content: space-between;">
+                            <h4>Standart Product Header</h4>
+                        </p  style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);">&#9733;	&#9733;	&#9733;	&#9733; &#9734;</a></p>
+                        <div style="display: flex;justify-content: space-around;width: 50%;"><span style="color: green;font-size: large;font-weight: 900;">$400</span><del style="font-size: large;font-weight: 100;">$425</del></div>
+                    </div>
+                </div> 
+                <div class="topselldiv">
+                    <div class="topselldivBut"  >
+                        <h2>MONEY BACK</h2>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <svg class="topsellSvg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trophy-fill" viewBox="0 0 16 16">
+                            <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935z"/>
+                          </svg>
+
+                    </div>
+                </div>
+                
+            </div>
+
+            
+
+
+
+       </div>
+
+
+    </main>
+    
+    <footer class="footer">
+        <ul class="footCom">
+            ABOUT US
+            <li>Our Mail: Lorem ipsum dolor sit amet.</li>
+            <li>Our Phone: +374 8426885</li>
+            <li>Our Partners: Nike</li>
+            <li>Our Phone: +374 8426885</li>
+            <li>Our Partners: Nike</li>
+            
+        </ul>
+        <ul class="footCom">
+            NEWS LETTER
+            <li>Lorem, ipsum dolor</li>
+            <input style="height: 28px;" type="text" placeholder="enter your mail">
+            <button class="bheart heart" >SUBSCRIBE</button>
+        
+           
+            
+        </ul>
+        <ul class="footCom">
+            INFORMATION
+            <li class="footComLi"><svg class="footComSvg " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg> ABOUT US</li>
+            <li class="footComLi"><svg class="footComSvg " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg> DELIVERY INFORMATION</li>
+            <li class="footComLi"><svg class="footComSvg " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg> CONTACT US</li>
+            <li class="footComLi"><svg class="footComSvg " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg> TERMS AND CONDITIONS</li>
+            <li class="footComLi"><svg class="footComSvg " xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg> PRIVACY POLICY</li>
+            
+        </ul>
+        <ul class="footCom">
+            ITEM TAGS
+                <li> 
+                    <button class="bheart heart">FASHION</button>
+                    <button class="bheart heart">JEANS</button>
+                    <button class="bheart heart">TOP SELLERS</button>
+                </li>
+                <li>                    
+                    <button class="bheart heart">COMMERCE</button>
+                    <button class="bheart heart">HOT DEALS</button>
+                </li>
+                <li>                    
+                    <button class="bheart heart">SUPILLER</button>
+                    <button class="bheart heart">SHOP</button>
+                    <button class="bheart heart">THEM</button>
+                </li>
+                <li>                    
+                    <button class="bheart heart">WEBSITE</button>
+                    <button class="bheart heart">ISAMERCAN</button>
+                </li>
+                <li>
+                    <button class="bheart heart">THEMEFOREST</button>
+                </li>
+            
+
+            
+        </ul>
+        
+        
+    </footer>
+        
+
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
